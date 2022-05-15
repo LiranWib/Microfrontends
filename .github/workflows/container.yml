@@ -24,7 +24,7 @@ jobs:
       - run: yarn install
       - run: yarn build
         env:
-          PRODUCTION_DOMAIN: ${{ sectets.PRODUCTION_DOMAIN }}
+          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
       # will give access to aws s3
       - uses: shinyinc/action-aws-cli@v1.2
       # will sync the files to aws s3
