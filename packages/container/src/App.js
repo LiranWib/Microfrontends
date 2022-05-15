@@ -6,11 +6,11 @@ import Header from './components/Header'
 
 export default () => {
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div>
         <Header />
         <MarketingApp />
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   )
 }
