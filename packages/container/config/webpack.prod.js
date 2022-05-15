@@ -17,7 +17,7 @@ const prodConfig = {
       // name is not mendatory in the container but recommended
       name: 'container',
       remotes: {
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`,
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
         // auth: 'auto@http://localhost:8081/remoteEntry.js'
       },
       shared: packageJson.dependencies

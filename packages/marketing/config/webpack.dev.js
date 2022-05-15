@@ -15,6 +15,7 @@ const devConfig = {
   plugins: [
     new ModuleFederationPlugin({
       name: 'marketing',
+      // remoteEntry will tell another program how to load our projects files
       filename: 'remoteEntry.js',
       exposes: {
         './MarketingApp': './src/bootstrap'
