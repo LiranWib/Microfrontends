@@ -15,6 +15,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       // name is not mendatory in the container but recommended
       name: 'marketing',
+      filename: 'remoteEntry.js',
       exposes: {
         './MarketingApp': './src/bootstrap'
       },
